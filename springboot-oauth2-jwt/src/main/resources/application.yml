@@ -1,0 +1,7 @@
+server: 
+      port: 9090
+jwt:
+  clientId: sample-security
+  client-secret: secret
+  accessTokenValidititySeconds: 1000
+  refreshTokenValiditySeconds: 100000
