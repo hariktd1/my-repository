@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserDetailsService {
 		// TODO Auto-generated method stub
 		User user = repository.findByEmail(username)
 				.orElseThrow(() -> new RuntimeException("User not found: " + username));
-		GrantedAuthority authority = new SimpleGrantedAuthority(user.getRole().name());
+		GrantedAuthority authority = new SimpleGrantedAuthority(user.getRole());
 		return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(),
 				Arrays.asList(authority));
 	}

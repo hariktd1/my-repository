@@ -24,4 +24,6 @@ public class Site {
 	private String address;
 	
 	private String zip;
+	
+	private String userName;
 }

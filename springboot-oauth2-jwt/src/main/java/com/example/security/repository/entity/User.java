@@ -16,10 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class User {
 
-	public enum Role {
-		USER, ADMIN, USER_MANAGER
-	}
-
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
@@ -28,6 +25,6 @@ public class User {
 
 	private String password;
 
-	private Role role;
+	private String role;
 
 }

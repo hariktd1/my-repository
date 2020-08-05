@@ -21,9 +21,9 @@ public class SignInServiceImpl implements SignInService {
 	public UserModel createUser(UserModel userModel) {
 		
 		User user = new User(null, userModel.getEmail(), passwordEncoder.encode(userModel.getPassword()),
-				User.Role.USER);
+				userModel.getRole());
 		userRepository.save(user);
-		userModel.setRole(user.getRole().name());
+		userModel.setRole(user.getRole());
 		return userModel;
 	}
 
