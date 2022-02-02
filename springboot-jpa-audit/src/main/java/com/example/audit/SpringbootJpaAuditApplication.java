@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 public class SpringbootJpaAuditApplication {
 	public static void main(String[] args) {
-
 		SpringApplication.run(SpringbootJpaAuditApplication.class, args);
 
 
