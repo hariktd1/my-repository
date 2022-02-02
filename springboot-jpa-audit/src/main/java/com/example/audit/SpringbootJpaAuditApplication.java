@@ -8,6 +8,7 @@ public class SpringbootJpaAuditApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootJpaAuditApplication.class, args);
+
 	}
 
 }
